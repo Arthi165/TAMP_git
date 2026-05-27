@@ -1,0 +1,32 @@
+
+======================================================================
+NFC-TAMP FINAL SUMMARY
+======================================================================
+MODEL
+  Architecture     : CNN(2ch 30×30 → 288 flat) + FC(291→50×4→5) Sigmoid
+  Parameters       : 23,289  (paper: 28,601)
+  Best test acc    : 83.07%  (paper: 93.6%)
+  Overall acc      : 84.78%
+
+PER-DIRECTION ACCURACY
+  +x     acc=79.6%  FF=20.9%  FI=17.9%  succ=82.1%  AUC=0.876
+  -x     acc=82.8%  FF=17.6%  FI=15.3%  succ=84.7%  AUC=0.910
+  +y     acc=82.6%  FF=17.4%  FI=17.2%  succ=82.8%  AUC=0.904
+  -y     acc=81.7%  FF=19.4%  FI=13.9%  succ=86.1%  AUC=0.907
+  +z     acc=97.2%  FF=100.0%  FI=0.0%  succ=100.0%  AUC=0.623
+
+NFC FEASIBILITY CHECK LATENCY  (per query, averaged over 20 problems)
+  Mean :    8.533 ms
+  Min  :    7.826 ms
+  Max  :   15.402 ms
+  (Paper reports ~0.038 ms on GPU; CPU times will be higher)
+
+PLANNING COMPARISON  (N=20 problems, timeout=600s)
+  Metric                 IDTMP        IDTMP+NFC    Speedup / Reduction
+  Total time (s)         0.005       0.002       2.2×
+  Motion time (s)        0.002       0.002       1.0×
+  BiRRT calls              4.3         1.0       4.3× (77.0% fewer calls)
+  Planning success%       95.0        95.0
+
+OUTPUTS  →  /home2/arthi/tamp/nfc_outputs
+======================================================================

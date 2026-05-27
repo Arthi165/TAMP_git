@@ -1,0 +1,112 @@
+{
+  "overall_accuracy": 0.84784,
+  "per_dir_acc": [
+    0.796,
+    0.828,
+    0.8264,
+    0.8172,
+    0.9716
+  ],
+  "dir_metrics": {
+    "+x": {
+      "accuracy": 0.796,
+      "false_feasible_rate": 0.20877025738798857,
+      "false_infeasible_rate": 0.1791044776119403,
+      "success_rate": 0.8208955223880597,
+      "roc_auc": 0.8760463649341471,
+      "confusion_matrix": [
+        [
+          1660,
+          438
+        ],
+        [
+          72,
+          330
+        ]
+      ],
+      "n_feasible": 402,
+      "n_infeasible": 2098,
+      "threshold": 0.6
+    },
+    "-x": {
+      "accuracy": 0.828,
+      "false_feasible_rate": 0.17635467980295566,
+      "false_infeasible_rate": 0.15319148936170213,
+      "success_rate": 0.8468085106382979,
+      "roc_auc": 0.9104003773189393,
+      "confusion_matrix": [
+        [
+          1672,
+          358
+        ],
+        [
+          72,
+          398
+        ]
+      ],
+      "n_feasible": 470,
+      "n_infeasible": 2030,
+      "threshold": 0.63
+    },
+    "+y": {
+      "accuracy": 0.8264,
+      "false_feasible_rate": 0.17389162561576355,
+      "false_infeasible_rate": 0.1723404255319149,
+      "success_rate": 0.8276595744680851,
+      "roc_auc": 0.9038738077769626,
+      "confusion_matrix": [
+        [
+          1677,
+          353
+        ],
+        [
+          81,
+          389
+        ]
+      ],
+      "n_feasible": 470,
+      "n_infeasible": 2030,
+      "threshold": 0.64
+    },
+    "-y": {
+      "accuracy": 0.8172,
+      "false_feasible_rate": 0.1935323383084577,
+      "false_infeasible_rate": 0.13877551020408163,
+      "success_rate": 0.8612244897959184,
+      "roc_auc": 0.9073652147426136,
+      "confusion_matrix": [
+        [
+          1621,
+          389
+        ],
+        [
+          68,
+          422
+        ]
+      ],
+      "n_feasible": 490,
+      "n_infeasible": 2010,
+      "threshold": 0.5700000000000001
+    },
+    "+z": {
+      "accuracy": 0.9716,
+      "false_feasible_rate": 1.0,
+      "false_infeasible_rate": 0.0,
+      "success_rate": 1.0,
+      "roc_auc": 0.6228610858232971,
+      "confusion_matrix": [
+        [
+          0,
+          71
+        ],
+        [
+          0,
+          2429
+        ]
+      ],
+      "n_feasible": 2429,
+      "n_infeasible": 71,
+      "threshold": 0.1
+    }
+  }
+}
